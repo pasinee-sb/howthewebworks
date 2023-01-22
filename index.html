@@ -1,0 +1,54 @@
+<!-- Part Three: Explore Dev Tools
+Build a very simple HTML form that uses the GET method (it can use the same page URL for the action) when the form is submitted.-->
+
+<form action="" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+<!-- Add a field or two to the form and, after submitting it, explore in Chrome Developer tools how you can view the request and response headers.
+   
+    Response Headers
+    Accept-Ranges: bytes
+Access-Control-Allow-Credentials: true
+Cache-Control: public, max-age=0
+Connection: keep-alive
+Content-Length: 830
+Content-Type: text/html; charset=UTF-8
+Date: Sun, 22 Jan 2023 17:24:40 GMT
+ETag: W/"33e-185da817333"
+Keep-Alive: timeout=5
+Last-Modified: Sun, 22 Jan 2023 17:23:14 GMT
+Vary: Origin
+
+Request Headers
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Cookie: __utma=111872281.588622621.1669773840.1669773840.1669773840.1; __utmz=111872281.1669773840.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Host: localhost:5500
+Referer: http://localhost:5500/
+sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+
+Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string? Explore in Chrome how you can view the request and response headers, as well as the form data. -->
+ 
+<form action="" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
